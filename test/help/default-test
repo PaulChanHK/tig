@@ -51,7 +51,7 @@ View manipulation
                        <Tab> view-next           Move focus to the next view
                      R, <F5> refresh             Reload and refresh view
                            O maximize            Maximize the current view
-[help] - line 1 of 142                                                       19%
+[help] - line 1 of 146                                                       19%
 EOF
 
 assert_equals 'help-search.screen' <<EOF
@@ -83,7 +83,7 @@ View manipulation
                        <Tab> view-next           Move focus to the next view
                      R, <F5> refresh             Reload and refresh view
                            O maximize            Maximize the current view
-[help] - line 20 of 142                                                      19%
+[help] - line 20 of 146                                                      19%
 EOF
 
 assert_equals 'help-collapsed.screen' <<EOF
@@ -115,5 +115,5 @@ Internal commands:
 Option toggling:
   F :toggle commit-title-refs
 External commands:
-[help] - line 4 of 75                                                        37%
+[help] - line 4 of 79                                                        35%
 EOF

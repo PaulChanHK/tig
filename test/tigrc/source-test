@@ -28,7 +28,7 @@ Quick reference for tig keybindings:
 View manipulation
   q quit   Close all views and quit
 Misc
-[help] - line 1 of 26                                                        26%
+[help] - line 1 of 30                                                        23%
 EOF
 
 test_case source-file-quietly \
@@ -48,7 +48,7 @@ Quick reference for tig keybindings:
 View manipulation
   q quit   Close all views and quit
 Misc
-[help] - line 1 of 26                                                        26%
+[help] - line 1 of 30                                                        23%
 EOF
 
 test_case source-nonexistent-file \
@@ -70,7 +70,7 @@ Quick reference for tig keybindings:
 Misc
   : prompt Open the prompt
 [-] Toggle options menu bindings
-[help] - line 1 of 24                                                        29%
+[help] - line 1 of 28                                                        25%
 EOF
 
 test_case source-nonexistent-file-quietly \
@@ -90,7 +90,7 @@ Quick reference for tig keybindings:
 Misc
   : prompt Open the prompt
 [-] Toggle options menu bindings
-[help] - line 1 of 24                                                        29%
+[help] - line 1 of 28                                                        25%
 EOF
 
 test_case source-tilde-path \
@@ -110,7 +110,7 @@ Quick reference for tig keybindings:
 View manipulation
   q quit   Close all views and quit
 Misc
-[help] - line 1 of 26                                                        26%
+[help] - line 1 of 30                                                        23%
 EOF
 
 run_test_cases

@@ -862,6 +862,13 @@ prompt_toggle(struct view *view, const char *argv[], enum view_flag *flags)
 		}
 	}
 
+	if (enum_equals_static("committer", option, optionlen) ||
+	    enum_equals_static("commit-date", option, optionlen)) {
+		if (!view_has_flags(view, VIEW_COMMIT_NAMEDATE)) {
+			return error("`:toggle %s` is not supported for the %s view", option, view->name);
+		}
+	}
+
 	toggle = find_option_info(option_toggles, ARRAY_SIZE(option_toggles), "", option);
 	if (toggle)
 		return prompt_toggle_option(view, argv, "", toggle, flags);
@@ -1195,6 +1202,10 @@ open_prompt(struct view *view)
 	_('$', "commit title overflow display", "commit-title-overflow"), \
 	_('d', "untracked directory info",  "status-show-untracked-dirs"), \
 	_('|', "view split",            "vertical-split"), \
+	_('E', "mail map",          "mailmap"), \
+	_('L', "local date",            "date-local"), \
+	_('M', "committer",         "committer"), \
+	_('m', "commit date",           "commit-date"), \
 
 static const struct menu_item toggle_menu_items[] = {
 #define DEFINE_TOGGLE_MENU(key, help, name) { key, help, name }
